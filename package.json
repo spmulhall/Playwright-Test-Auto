@@ -3,8 +3,12 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
-  "author": "",
+  "scripts": {
+    "test": "npx playwright test --ui",
+    "generate: report": "npx playwright show-report",
+    "execute": "npx playwright test && npx playwright show-report"
+  },
+  "author": "Steve Mulhall",
   "license": "ISC",
   "devDependencies": {
     "@playwright/test": "^1.44.0",
